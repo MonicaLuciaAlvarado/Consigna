@@ -10,7 +10,7 @@ package com.mycompany.consigna;
  */
 public class Administrador extends Usuarios {
 
-    // Constructor
+    // Constructor de subclase
 
     public Administrador(){
         super();

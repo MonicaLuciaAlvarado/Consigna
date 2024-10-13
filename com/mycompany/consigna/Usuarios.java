@@ -28,6 +28,7 @@ public class Usuarios {
         this.tipo = 0;
     }
 
+    //CONstructor sobrecargado
     public Usuarios(int cedula, String nombre, String direccion, int telefono, String correo_electronico, int tipo) {
 
         this.cedula = cedula;
