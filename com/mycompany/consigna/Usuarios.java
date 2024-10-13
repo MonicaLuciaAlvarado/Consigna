@@ -10,15 +10,25 @@ package com.mycompany.consigna;
  */
 public class Usuarios {
 
-    private int cedula;
-    private String nombre;
-    private String direccion;
-    private int telefono;
-    private String correo_electronico;
-    private String tipo;
+    protected int cedula;
+    protected String nombre;
+    protected String direccion;
+    protected int telefono;
+    protected String correo_electronico;
+    protected int tipo;
 
     // Constructor
-    public Usuarios(int cedula, String nombre, String direccion, int telefono, String correo_electronico, String tipo) {
+
+    public Usuarios(){
+        this.cedula = 0;
+        this.nombre = "";
+        this.direccion = "";
+        this.telefono = 0;
+        this.correo_electronico = "";
+        this.tipo = 0;
+    }
+
+    public Usuarios(int cedula, String nombre, String direccion, int telefono, String correo_electronico, int tipo) {
 
         this.cedula = cedula;
         this.nombre = nombre;
@@ -69,11 +79,11 @@ public class Usuarios {
         this.correo_electronico = correo_electronico;
     }
 
-    public String getTipo() {
+    public int getTipo() {
         return tipo;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(int tipo) {
         this.tipo = tipo;
     }
 
