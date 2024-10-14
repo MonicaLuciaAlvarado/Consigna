@@ -12,7 +12,19 @@ public class Administrador extends Usuarios {
 
     // Constructor de subclase
 
-    public Administrador(){
-        super();
+    public Administrador(int cedula, String nombre, String direccion, int telefono, String correo_electronico, int tipo){
+        super(cedula,nombre,direccion,telefono,correo_electronico,tipo);
+    }
+
+    @Override
+    public String toString(){
+        return "Cliente{" +
+                "cedula=" + getCedula() +
+                ", nombre='" + getNombre() + '\'' +
+                ", direccion='" + getDireccion() + '\'' +
+                ", telefono=" + getTelefono() +
+                ", correo_electronico='" + getCorreo_electronico() + '\'' +
+                ", tipo='" + getTipo() + '\'' +
+                '}';
     }
 }

@@ -9,7 +9,7 @@ package com.mycompany.consigna;
  * @author ester
  */
 public class Plantas {
-    //Atributos .
+    // Atributos .
     private int id_planta;
     private String nombre;
     private String especie;
@@ -17,8 +17,8 @@ public class Plantas {
     private int cantidad_stock;
     private String descripcion;
 
-    //Método constructor
-    public Plantas(){
+    // Método constructor
+    public Plantas() {
         this.id_planta = 0;
         this.nombre = "";
         this.especie = "";
@@ -27,8 +27,9 @@ public class Plantas {
         this.descripcion = "";
     }
 
-     // Método constructor sobrecargado
-     public Plantas(int id_planta, String nombre, String especie, double precio, int cantidad_stock, String descripcion){
+    // Método constructor sobrecargado
+    public Plantas(int id_planta, String nombre, String especie, double precio, int cantidad_stock,
+            String descripcion) {
         this.id_planta = id_planta;
         this.nombre = nombre;
         this.especie = especie;
@@ -38,52 +39,51 @@ public class Plantas {
     }
 
     // Métodos accesores y mutadores
-    public int getId_planta(){
+    public int getId_planta() {
         return id_planta;
     }
 
-    public void setId_planta(int id_planta){
+    public void setId_planta(int id_planta) {
         this.id_planta = id_planta;
     }
 
-    public String getNombre(){
+    public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(String nombre){
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getEspecie(){
+    public String getEspecie() {
         return especie;
     }
 
-    public void setEspecie(String especie){
+    public void setEspecie(String especie) {
         this.especie = especie;
     }
 
-    public double getPrecio(){
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio){
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
-    public int getCantidad_stock(){
+    public int getCantidad_stock() {
         return cantidad_stock;
     }
 
-    public void setCantidad_stock(int cantidad_stock){
+    public void setCantidad_stock(int cantidad_stock) {
         this.cantidad_stock = cantidad_stock;
     }
 
-    public String getDescripcion(){
+    public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(String descripcion){
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 }
-
